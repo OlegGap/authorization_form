@@ -63,16 +63,19 @@
       -ms-flex-pack: end;
       justify-content: flex-end;
       width: 100%; }
-      .popup .popup-content .close-btn-container .close-btn {
-        color: #fff;
+      .popup .popup-content .close-btn-container .close-btn-wrapper {
+        width: 20px;
+        height: 19px;
         background-color: #c2c2c2;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        font-size: 22px;
+        padding-left: 2px; }
+      .popup .popup-content .close-btn-container .close-btn {
+        color: #fff;
+        font-size: 17px;
         text-align: center;
         line-height: 20px;
-        cursor: pointer; }
+        cursor: pointer;
+        margin: auto; }
     .popup .popup-content .popup-wrapper {
       width: 80%;
       margin-top: 50px; }
