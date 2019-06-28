@@ -138,6 +138,8 @@
         .form-phone > input {
           width: 75%;
           margin-bottom: 20px;
+          margin-left: -12px;
+          padding-left: 30px;
         }
 
         .form-submit {
@@ -205,4 +207,10 @@
   font-family: Montserrat-Bold;
   font-size: 13px;
 }
-
+.form-phone--flag {
+  display: inline;
+  img {
+    width: 22px;
+    transform: translate(15px, 1px);
+  }
+}

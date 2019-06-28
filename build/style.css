@@ -71,13 +71,12 @@
         background-color: #c2c2c2;
         border-radius: 50%; }
       .popup .popup-content .close-btn-container .close-btn {
-        justify-content: center;
         color: #fff;
         font-size: 17px;
         text-align: center;
-        line-height: 20px;
         cursor: pointer;
-        margin: auto; }
+        margin: auto;
+        margin-top: 3px; }
     .popup .popup-content .popup-wrapper {
       width: 80%;
       margin-top: 50px; }
@@ -124,7 +123,9 @@
         margin-bottom: 40px; }
       .popup .popup-content .popup-wrapper .popup-body .form-phone > input {
         width: 75%;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        margin-left: -12px;
+        padding-left: 30px; }
       .popup .popup-content .popup-wrapper .popup-body .form-submit {
         background: #f3ad64;
         border: none;
@@ -179,3 +180,9 @@
   color: rgba(255, 0, 0, 0.63);
   font-family: Montserrat-Bold;
   font-size: 13px; }
+
+.form-phone--flag {
+  display: inline; }
+  .form-phone--flag img {
+    width: 22px;
+    transform: translate(15px, 1px); }
