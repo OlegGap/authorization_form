@@ -22,7 +22,7 @@ popupSubmit.addEventListener('submit', (evt) => {
     evt.preventDefault();
     let error = "Ошибка: ";
 
-    let checkName = /[А-Я][а-я]/,
+    let checkName = /[А-ЯA-Z][а-яa-z]/,
         checkEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/,
         checkPhone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
 
