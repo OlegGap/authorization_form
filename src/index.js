@@ -4,7 +4,7 @@ import "./styles/style.scss";
 const popup = document.querySelector("#form-popup"),
     popupToggle = document.querySelector("#myBtn"),
     popupClose = document.querySelector('.close-btn'),
-    congratulations = document.querySelector('.congratulations'),
+    // congratulations = document.querySelector('.congratulations');
     errorText = document.querySelector('.error-text');
 
 popupToggle.addEventListener('click', () => popup.style.display = 'block');
@@ -37,7 +37,7 @@ popupSubmit.addEventListener('submit', (evt) => {
     }
     if (error === "Ошибка: ") {
         popup.style.display = "none";
-        congratulations.style.display = "block";
+        window.location.assign("congratulations.html");
     } else {                                    //show error
         errorText.textContent = error;
     }

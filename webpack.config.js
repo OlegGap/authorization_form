@@ -50,6 +50,11 @@ module.exports = {
             template: './src/index.html',
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            hash: true,
+            template: './src/congratulations.html',
+            filename: 'congratulations.html'
+        }),
         new ExtractTextPlugin({filename: 'style.css'})
     ]
 }
