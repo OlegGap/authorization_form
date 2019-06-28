@@ -57,14 +57,16 @@
       width: 100%;
 
       .close-btn-wrapper {
-        width: 20px;
-        height: 19px;
+        display: flex;
+        vertical-align: middle;
+        width: 25px;
+        height: 25px;
         background-color: #c2c2c2;
         border-radius: 50%;
-        padding-left: 2px;
       }
 
       .close-btn {
+        justify-content: center;
         color: #fff;
         font-size: 17px;
         text-align: center;
