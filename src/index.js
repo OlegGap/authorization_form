@@ -1,0 +1,47 @@
+import "./styles/fonts.scss"
+import "./styles/style.scss";
+
+const popup = document.querySelector("#form-popup"),
+    popupToggle = document.querySelector("#myBtn"),
+    popupClose = document.querySelector('.close-btn'),
+    congratulations = document.querySelector('.congratulations');
+
+popupToggle.addEventListener('click', () => popup.style.display = 'block');
+popupClose.addEventListener('click', () => popup.style.display = 'none');
+window.addEventListener('click', (element) => {
+    if (element.target === popup) popup.style.display = "none"
+});
+
+const popupInputName = document.querySelector(".form-name > input"),
+    popupInputEmail = document.querySelector(".form-email > input"),
+    popupInputPhone = document.querySelector(".form-phone > input"),
+    popupSubmit = document.querySelector(".popup-form");
+
+// console.log(popupSubmit)
+
+popupSubmit.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    let error = "Ошибка:";
+
+    let checkName = /[А-Я][а-я]/,
+        checkEmail = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/,
+        checkPhone = /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/;
+
+    if (!checkName.test(popupInputName.value)) {
+        error += "\nФормат имени неверный!";
+
+    }
+    if (!checkEmail.test(popupInputEmail.value)) {
+        error += "\nФормат E-mail неверный!";
+    }
+    if (!checkPhone.test(popupInputPhone.value)) {
+        error += "\nФормат телефона неверный!";
+    }
+    if (error === "Ошибка:") {
+        popup.style.display = "none";
+        congratulations.style.display="block"
+    } else {
+        alert(error)
+    }
+});
+
