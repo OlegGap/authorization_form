@@ -1,5 +1,5 @@
 {
-  "name": "hw13",
+  "name": "authorization_form",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "webpack  --mode production",
     "dev": "webpack-dev-server --mode development --open --watch",
-    "git": "git push"
+    "git": "git add . & git commit -m \"bug fixed\""
   },
   "author": "Oleg <hnapovskiy20@gmail.com>",
   "license": "ISC",
